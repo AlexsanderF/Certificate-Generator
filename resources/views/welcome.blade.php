@@ -57,10 +57,12 @@
                 <section class="bg-gradient-to-br from-teal-400 to-color3 py-12 text-center">
                     <div class="mx-auto w-full p-28 flex flex-col gap-14">
                         <h1 class="text-6xl text-white">Consultar certificado:</h1>
-                        <form class="">
+                        <form method="post"
+                              action="{{ route('certificate.search') }}">
+                            @csrf
                             <input class="p-5 w-4/12 rounded-l-md border-none outline-none text-lg text-color5"
                                    type="text"
-                                   id="search-certificate" placeholder="Autenticação:" required>
+                                   id="search-certificate" name="search-certificate" placeholder="Autenticação:" required>
                             <button
                                 class="p-5 rounded-r-md border-none bg-teal-900 text-white text-lg cursor-pointer hover:bg-teal-950"
                                 type="submit">Consultar
