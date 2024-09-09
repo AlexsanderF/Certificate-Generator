@@ -14,9 +14,9 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('training_name')->nullable('false');
-            $table->date('period_start')->nullable('false');
-            $table->date('period_end')->nullable('false');
-            $table->string('duration')->nullable('false');
+            $table->date('start_period_training')->nullable('false');
+            $table->date('end_period_training')->nullable('false');
+            $table->string('duration_training')->nullable('false');
             $table->string('city_of_training');
             $table->string('state_of_training');
             $table->timestamps();

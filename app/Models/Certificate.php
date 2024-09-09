@@ -13,9 +13,9 @@ class Certificate extends Model
     protected $fillable = [
         'name',
         'training_name',
-        'period_start',
-        'period_end',
-        'duration',
+        'start_period_training',
+        'end_period_training',
+        'duration_training',
         'city_of_training',
         'state_of_training',
     ];
